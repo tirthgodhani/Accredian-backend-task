@@ -13,6 +13,7 @@ const port = process.env.PORT || 3001;
 // Middleware
 app.use(cors({
   origin: [
+    'https://accredianfrontendtask.vercel.app',
    'https://accredianfrontendtask-ssl68vk0i-tirth-s-projects.vercel.app',
   'https://accredianfrontendtask-git-main-tirth-s-projects.vercel.app'
     ]}
