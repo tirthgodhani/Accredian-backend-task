@@ -11,7 +11,13 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors()); // Allow all origins during development
+app.use(cors(
+  origin: [
+   'https://accredianfrontendtask-ssl68vk0i-tirth-s-projects.vercel.app',
+  'https://accredianfrontendtask-git-main-tirth-s-projects.vercel.app'
+    ]
+
+)); // Allow all origins during development
 app.use(express.json());
 
 // Health check route
